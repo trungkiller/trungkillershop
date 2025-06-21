@@ -1,0 +1,60 @@
+2025-06-18 22:11:01.345 [main] INFO  c.s.t.TrungkillershopApplication - Starting TrungkillershopApplication using Java 1.8.0_452 on TrungKiller with PID 10952 (D:\Download\trungkillershop\trungkillershop\target\classes started by admin in D:\Download\trungkillershop\trungkillershop)
+2025-06-18 22:11:01.347 [main] INFO  c.s.t.TrungkillershopApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-18 22:11:02.009 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2025-06-18 22:11:02.014 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2025-06-18 22:11:02.015 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-18 22:11:02.015 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-06-18 22:11:02.078 [main] INFO  o.a.c.c.C.[.[.[/trungkillershop] - Initializing Spring embedded WebApplicationContext
+2025-06-18 22:11:02.078 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 698 ms
+2025-06-18 22:11:02.370 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2025-06-18 22:11:02.384 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path '/trungkillershop'
+2025-06-18 22:11:02.391 [main] INFO  c.s.t.TrungkillershopApplication - Started TrungkillershopApplication in 1.451 seconds (JVM running for 2.145)
+2025-06-18 22:11:06.365 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[.[.[/trungkillershop] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18 22:11:06.365 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-18 22:11:06.366 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-18 22:11:06.390 [http-nio-8088-exec-1] INFO  c.s.t.c.ProductCommonController - 111
+2025-06-18 22:11:06.427 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-18 22:11:06.614 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-18 22:11:06.729 [http-nio-8088-exec-1] INFO  c.s.t.c.ProductCommonController - BaseResponse(repsonseCode=404, responseMessage=No products found, data=null)
+2025-06-18 22:12:41.043 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-18 22:12:41.064 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-18 22:12:43.691 [main] INFO  c.s.t.TrungkillershopApplication - Starting TrungkillershopApplication using Java 1.8.0_452 on TrungKiller with PID 13824 (D:\Download\trungkillershop\trungkillershop\target\classes started by admin in D:\Download\trungkillershop\trungkillershop)
+2025-06-18 22:12:43.691 [main] INFO  c.s.t.TrungkillershopApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-18 22:12:44.341 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2025-06-18 22:12:44.341 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2025-06-18 22:12:44.341 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-18 22:12:44.341 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-06-18 22:12:44.404 [main] INFO  o.a.c.c.C.[.[.[/trungkillershop] - Initializing Spring embedded WebApplicationContext
+2025-06-18 22:12:44.404 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 681 ms
+2025-06-18 22:12:44.689 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2025-06-18 22:12:44.704 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path '/trungkillershop'
+2025-06-18 22:12:44.720 [main] INFO  c.s.t.TrungkillershopApplication - Started TrungkillershopApplication in 1.384 seconds (JVM running for 1.994)
+2025-06-18 22:12:47.407 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[.[.[/trungkillershop] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18 22:12:47.407 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-18 22:12:47.407 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-06-18 22:12:47.422 [http-nio-8088-exec-1] INFO  c.s.t.c.ProductCommonController - 111
+2025-06-18 22:12:47.470 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-18 22:12:47.628 [http-nio-8088-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-18 22:12:47.739 [http-nio-8088-exec-1] INFO  c.s.t.c.ProductCommonController - BaseResponse(repsonseCode=404, responseMessage=No products found, data=null)
+2025-06-18 22:13:09.966 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-18 22:13:09.974 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-18 22:13:12.555 [main] INFO  c.s.t.TrungkillershopApplication - Starting TrungkillershopApplication using Java 1.8.0_452 on TrungKiller with PID 8164 (D:\Download\trungkillershop\trungkillershop\target\classes started by admin in D:\Download\trungkillershop\trungkillershop)
+2025-06-18 22:13:12.558 [main] INFO  c.s.t.TrungkillershopApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-18 22:13:13.199 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2025-06-18 22:13:13.204 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2025-06-18 22:13:13.205 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-18 22:13:13.205 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-06-18 22:13:13.268 [main] INFO  o.a.c.c.C.[.[.[/trungkillershop] - Initializing Spring embedded WebApplicationContext
+2025-06-18 22:13:13.268 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 680 ms
+2025-06-18 22:13:13.555 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2025-06-18 22:13:13.569 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path '/trungkillershop'
+2025-06-18 22:13:13.577 [main] INFO  c.s.t.TrungkillershopApplication - Started TrungkillershopApplication in 1.376 seconds (JVM running for 2.053)
+2025-06-18 22:13:16.280 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[.[.[/trungkillershop] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18 22:13:16.281 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-18 22:13:16.281 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-06-18 22:13:16.305 [http-nio-8088-exec-2] INFO  c.s.t.c.ProductCommonController - 111
+2025-06-18 22:13:16.342 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-18 22:13:16.527 [http-nio-8088-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-18 22:13:16.645 [http-nio-8088-exec-2] INFO  c.s.t.c.ProductCommonController - BaseResponse(repsonseCode=404, responseMessage=No products found, data=null)
+2025-06-18 22:14:10.356 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-18 22:14:10.363 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
