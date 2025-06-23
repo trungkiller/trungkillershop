@@ -34,7 +34,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/api/users/login", "/api/users/refresh-token", "/api/users/authenticate").permitAll() // Cho phép truy cập công khai
+                .antMatchers("/api/public/**").permitAll() // Cho phép truy cập công khai
                 .anyRequest().authenticated()
                 .and().sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS); // Không sử dụng session

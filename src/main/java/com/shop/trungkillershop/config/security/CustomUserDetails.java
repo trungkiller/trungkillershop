@@ -13,6 +13,8 @@ public class CustomUserDetails extends User {
 
     private String role;     // Thêm thuộc tính role
     private String userType; // Thêm thuộc tính userType
+    private String email; // Thêm thuộc tính userType
+    private String fullName; // Thêm thuộc tính userType
     // Bạn có thể thêm các trường thông tin khác mà bạn muốn đưa vào JWT và UserDetails
 
     /**
@@ -23,12 +25,14 @@ public class CustomUserDetails extends User {
      * @param role Vai trò của người dùng (ví dụ: "ADMIN", "USER").
      * @param userType Loại người dùng (ví dụ: "INDIVIDUAL", "BUSINESS").
      */
-    public CustomUserDetails(String username, String password, String role, String userType) {
+    public CustomUserDetails(String username, String password, String role, String userType, String email, String fullName) {
         // Gọi constructor của lớp cha (org.springframework.security.core.userdetails.User)
         // Spring Security yêu cầu GrantedAuthority phải có tiền tố "ROLE_" để nhận diện vai trò.
         super(username, password, Collections.singleton(new SimpleGrantedAuthority("ROLE_" + role)));
         this.role = role;
         this.userType = userType;
+        this.email = email;
+        this.fullName = fullName;
     }
 
     // --- Getters cho các thuộc tính tùy chỉnh ---
@@ -38,6 +42,12 @@ public class CustomUserDetails extends User {
 
     public String getUserType() {
         return userType;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public String getFullName() {
+        return fullName;
     }
 
     // --- Các phương thức của UserDetails (được kế thừa từ lớp User) ---

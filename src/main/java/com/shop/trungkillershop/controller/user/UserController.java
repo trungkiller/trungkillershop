@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("/api/public/users")
 public class UserController {
     private static final Logger logger = LoggerFactory.getLogger(ProductCommonController.class);
 
@@ -90,6 +90,8 @@ public class UserController {
                 CustomUserDetails customUserDetails = (CustomUserDetails) userDetails;
                 userInfo.put("role", customUserDetails.getRole());
                 userInfo.put("userType", customUserDetails.getUserType());
+                userInfo.put("email", customUserDetails.getEmail());
+                userInfo.put("fullName", customUserDetails.getFullName());
             }
 
             response.setRepsonseCode("200");

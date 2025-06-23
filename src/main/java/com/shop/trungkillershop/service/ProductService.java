@@ -6,5 +6,6 @@ import java.util.List;
 import java.util.Map;
 
 public interface ProductService {
-    List<Map<String, Object>> getAllProducts(String name);
+    List<Map<String, Object>> getAllProducts();
+    Map<String, Object> uploadImage(String productId, String fileName, String userUpload);
 }

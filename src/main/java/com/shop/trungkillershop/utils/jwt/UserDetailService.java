@@ -30,6 +30,8 @@ public class UserDetailService implements UserDetailsService {
             throw new UsernameNotFoundException("Username invalid: " + username);
         }
 
-        return new CustomUserDetails(user.get("username").toString(), user.get("password").toString(), user.get("roleId").toString(), user.get("userType").toString());
+        return new CustomUserDetails(user.get("username").toString(), user.get("password").toString(),
+                user.get("roleId").toString(), user.get("userType").toString() , user.get("email").toString()
+                , user.get("fullName").toString());
     }
 }

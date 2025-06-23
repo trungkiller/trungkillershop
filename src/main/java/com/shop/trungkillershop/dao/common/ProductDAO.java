@@ -1,8 +1,6 @@
 package com.shop.trungkillershop.dao.common;
 
 import com.shop.trungkillershop.config.common.CommonJdbcTempConfig;
-import com.shop.trungkillershop.controller.common.ProductCommonController;
-import com.shop.trungkillershop.model.common.ProductModel;
 import com.shop.trungkillershop.service.ProductService;
 import oracle.jdbc.OracleTypes;
 import org.slf4j.Logger;
@@ -27,10 +25,10 @@ public class ProductDAO implements ProductService {
     CommonJdbcTempConfig commonJdbcTemplate;
 
     @Override
-    public List<Map<String, Object>> getAllProducts(String name) {
+    public List<Map<String, Object>> getAllProducts() {
         Map<String, Object> params = new HashMap<>();
 
-        params.put("p_name", name);
+        params.put("p_name", "");
 
         SqlParameter[] paramDefs = new SqlParameter[] {
                 new SqlParameter("p_name", Types.VARCHAR),
@@ -49,5 +47,34 @@ public class ProductDAO implements ProductService {
         logger.info("func: {} response: {}", "getAllProducts", products);
 
         return products;
+    }
+
+    @Override
+    public Map<String, Object> uploadImage(String productId, String fileName, String userUpload) {
+        Map<String, Object> params = new HashMap<>();
+
+        params.put("p_product_id", productId);
+        params.put("p_file_name", fileName);
+        params.put("p_user", userUpload);
+
+        SqlParameter[] paramDefs = new SqlParameter[] {
+                new SqlParameter("p_product_id", Types.VARCHAR),
+                new SqlParameter("p_file_name", Types.VARCHAR),
+                new SqlParameter("p_user", Types.VARCHAR),
+                new SqlOutParameter("data", OracleTypes.CURSOR, new ColumnMapRowMapper())
+        };
+
+        Map<String, Object> result = commonJdbcTemplate.callProcedure(
+                "pkg_products",
+                "upload_image",
+                paramDefs,
+                params
+        );
+
+        List<Map<String, Object>> imageUpload = (List<Map<String, Object>>) result.get("data");
+
+        logger.info("func: {} response: {}", "uploadImage", imageUpload);
+
+        return imageUpload.isEmpty() ? null : imageUpload.get(0);
     }
 }
